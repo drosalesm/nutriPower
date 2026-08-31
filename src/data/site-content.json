@@ -1,0 +1,417 @@
+{
+  "brand": {
+    "name": "Nutri Power",
+    "tagline": "Mejorando tu performance",
+    "logo": "nutriPower1.png",
+    "isotipo": "Nutri Power Isotipo.png",
+    "whatsapp": "50495734852"
+  },
+
+"founders": {
+  "eyebrow": "Acerca de nosotros",
+  "titleStart": "Conoce a quienes están detrás de ",
+  "titleHighlight": "Nutri Power",
+  "intro": "Nutri Power nace de la pasión por el deporte, la nutrición y el rendimiento. Nuestro propósito es acompañar a cada atleta con productos seleccionados para entrenar, competir y recuperarse mejor.",
+  "items": [
+    {
+      "image": "amigoKaren.jpeg",
+      "imageAlt": "Fundador de Nutri Power",
+      "name": "Jorge Maldonado",
+      "role": "Co-Fundador",
+      "description": "Jorge Maldonado es un apasionado del deporte y de los retos que implica mantenerse siempre activo. Su principal pasión está en el running y el entrenamiento en gimnasio, disciplinas que forman parte de su rutina y que reflejan su compromiso con el rendimiento, la disciplina y el bienestar. También disfruta del ciclismo, incorporándolo ocasionalmente como otra forma de mantenerse activo, disfrutar del deporte y asumir nuevos retos. Más allá de practicar diferentes disciplinas, Jorge representa ese espíritu de quien entiende que los resultados no aparecen de un día para otro: se construyen con cada entrenamiento, cada esfuerzo y cada decisión de seguir adelante, incluso cuando no es fácil. Su experiencia como deportista y su interés por mantenerse activo aportan a Nutripower una perspectiva práctica y cercana. Conoce lo que significa prepararse para un entrenamiento, buscar energía para completar un reto y cuidar el cuerpo para poder volver a dar lo mejor al día siguiente. Su disciplina, constancia y dedicación son parte esencial de la visión que impulsa Nutripower: acompañar a cada persona en su propio camino, sin importar su nivel o disciplina, para seguir avanzando y mejorar su performance."
+    },
+    {
+      "image": "karen.jpeg",
+      "imageAlt": "Fundador de Nutri Power",
+      "name": "Karen Cruz",
+      "role": "Co-Fundador",
+      "description": "Karen Cruz es una apasionada del deporte y de los retos que implica llevar un estilo de vida activo. El gimnasio, el running y el ciclismo forman parte de su vida, disciplinas que disfruta y que le han permitido conocer de cerca la constancia, la disciplina y el compromiso que requiere mejorar día a día. Su experiencia en diferentes disciplinas deportivas le ha permitido entender que cada actividad tiene necesidades diferentes: desde una buena hidratación y energía para afrontar un entrenamiento o una ruta en bicicleta, hasta una adecuada recuperación después del esfuerzo. De esta pasión por el deporte y de la búsqueda constante por sentirse, entrenar y rendir mejor nace también su visión para Nutripower: crear una marca cercana a los deportistas, que conozca sus necesidades y les facilite encontrar productos que puedan acompañarlos antes, durante y después de cada reto. Para Karen, el deporte es mucho más que ejercicio. Es una forma de vida que representa disciplina, bienestar, perseverancia y la satisfacción de superar los propios límites."
+    }
+  ]
+},
+
+  "nav": {
+    "links": [
+      { "href": "#inicio", "label": "Inicio", "icon": "Home" },
+      { "href": "#productos", "label": "Productos", "icon": "Package" },
+      { "href": "#eventos", "label": "Eventos", "icon": "Trophy" },
+      { "href": "#contacto", "label": "Contacto", "icon": "MessageCircle" }
+    ],
+    "ctaLabel": "WhatsApp",
+    "ctaMessage": "Hola Nutri Power, quiero hacer un pedido."
+  },
+
+  "hero": {
+    "image": "hero.jpg",
+    "imageAlt": "Corredor y ciclista entrenando al atardecer",
+    "badge": "Mejorando tu performance",
+    "brandLine": "Nutri Power",
+    "titleParts": [
+      { "text": "Energía ", "tone": "white" },
+      { "text": "que ", "tone": "lime" },
+      { "text": "no se apaga ", "tone": "white" },
+      { "text": "en el ", "tone": "primary" },
+      { "text": "kilómetro ", "tone": "white" },
+      { "text": "30", "tone": "lime" }
+    ],
+    "subtitle": "Geles, galletas de proteína y electrolitos formulados para runners y ciclistas que entrenan de verdad. Digestión ligera, sabor real, resultados medibles.",
+    "primaryCta": {
+      "label": "Ver productos",
+      "href": "#productos"
+    },
+    "secondaryCta": {
+      "label": "Próximos eventos",
+      "href": "#eventos"
+    },
+    "stats": [
+      { "value": "+8,000", "label": "Atletas abastecidos" },
+      { "value": "25 g", "label": "Carbos por gel" },
+      { "value": "0", "label": "Malestar estomacal" }
+    ],
+    "marquee": [
+      "Running",
+      "Ciclismo",
+      "Trail",
+      "Triatlón",
+      "Maratón",
+      "Gravel",
+      "Ultra"
+    ]
+  },
+
+  "products": {
+    "eyebrow": "Catálogo",
+    "titleStart": "Combustible ",
+    "titleHighlight": "real",
+    "intro": "Productos seleccionados para hidratación, energía, rendimiento y recuperación. Opciones prácticas para running, ciclismo, gimnasio y deportes de resistencia.",
+
+    "modal": {
+      "detailsTitle": "Detalles",
+      "ctaLabel": "Pedir por WhatsApp",
+      "galleryHint": "Toca las miniaturas para ver más fotos"
+    },
+
+    "items": [
+      {
+        "images": [
+          "nuun 2.jpg",
+          "nuun.jpg"
+        ],
+        "tag": "Electrolitos",
+        "name": "Nuun Sport",
+        "desc": "Tabletas de electrolitos prácticas para preparar tu hidratación durante entrenamientos y competencias.",
+        "longDesc": "Tabletas efervescentes diseñadas para preparar una bebida de hidratación de forma práctica. Ideales para acompañarte durante entrenamientos, carreras y actividades deportivas.",
+        "details": [
+          "💧 Electrolitos para hidratación",
+          "⚡ Prácticas y fáciles de transportar",
+          "Se disuelven fácilmente en agua",
+          "🏃‍♀️ Ideales para running, ciclismo y entrenamiento",
+          "🎒 Perfectas para llevar durante competencias"
+        ],
+        "price": "L 280"
+      },
+
+      {
+        "images": [
+          "skrach lemonade.jpg"
+        ],
+        "tag": "Electrolitos",
+        "name": "Skratch Labs",
+        "desc": "Sport Hydration Drink Mix para reponer líquidos y electrolitos durante el ejercicio.",
+        "longDesc": "Mezcla de hidratación en polvo diseñada para acompañar el rendimiento durante el ejercicio y ayudar a reponer líquidos y electrolitos.",
+        "details": [
+          "💧 Hidratación durante el ejercicio",
+          "⚡ Aporta electrolitos",
+          "🥤 Fácil preparación",
+          "🎒 Presentación práctica para llevar",
+          "🚴 Ideal para ciclismo, running y deportes de resistencia"
+        ],
+        "price": "L 480"
+      },
+
+      {
+        "images": [
+          "Saltstickk1.jpg",
+          "Saltstickk2.jpg",
+          "Saltstickk3.jpg"
+        ],
+        "tag": "Electrolitos",
+        "name": "SaltStick FastChews",
+        "desc": "Electrolitos masticables para consumir de forma rápida y cómoda durante la actividad física.",
+        "longDesc": "Tabletas masticables de electrolitos pensadas para consumir fácilmente durante la actividad física, sin necesidad de preparar una bebida.",
+        "details": [
+          "⚡ Electrolitos en formato masticable",
+          "💧 Prácticas durante entrenamientos",
+          "🎒 Fáciles de transportar",
+          "⏱️ Consumo rápido y cómodo",
+          "🏃‍♀️ Ideales para deportes de resistencia"
+        ],
+        "price": "L 350"
+      },
+
+      {
+        "images": [
+          "prod-electro-3.jpg",
+          "prod-electro.jpg",
+          "prod-electro-2.jpg"
+        ],
+        "tag": "Electrolitos",
+        "name": "LMNT",
+        "desc": "Electrolyte Drink Mix con sodio, potasio y magnesio para entrenamientos exigentes.",
+        "longDesc": "Mezcla de electrolitos diseñada para ayudar a reponer los minerales que se pierden durante la actividad física. Ideal para entrenamientos intensos, ejercicio prolongado y deportes de resistencia.",
+        "details": [
+          "⚡ Alto contenido de electrolitos",
+          "💧 Ideal para hidratación durante el ejercicio",
+          "🧂 Aporta sodio, potasio y magnesio",
+          "🥤 Fácil de preparar con agua",
+          "🎒 Sobres individuales, prácticos para llevar",
+          "🏃 Ideal para running, ciclismo, gimnasio y deportes de resistencia"
+        ],
+        "price": "L 650"
+      },
+
+      {
+        "images": [
+          "barras1.jpeg",
+          "barras2.jpeg",
+          "barras3.jpeg",
+          "barras4.jpeg"
+        ],
+        "tag": "Barras energéticas",
+        "name": "CLIF BAR",
+        "desc": "Barra energética práctica para aportar carbohidratos durante entrenamientos y actividades prolongadas.",
+        "longDesc": "Barra energética elaborada para proporcionar carbohidratos y energía durante la actividad física. Una opción práctica para llevar durante entrenamientos y actividades de larga duración.",
+        "details": [
+          "⚡ Fuente de energía",
+          "🍫 Diferentes sabores disponibles",
+          "🎒 Fácil de transportar",
+          "🚴 Ideal para ciclismo y running",
+          "🏃‍♀️ Excelente opción para actividades prolongadas",
+          "Sabores: Chocolate Brownie · Cool Mint Chocolate · Peanut Butter · Chocolate Chip"
+        ],
+        "price": "L 90"
+      },
+
+      {
+        "images": [
+          "grab.jpeg"
+        ],
+        "tag": "Barras energéticas",
+        "name": "GRAB",
+        "desc": "Barra sin azúcar añadida, práctica para llevar como snack durante el día.",
+        "longDesc": "Barras prácticas para disfrutar como snack sin azúcar añadida. Una alternativa conveniente para quienes buscan una opción para llevar durante el día o sus actividades deportivas.",
+        "details": [
+          "🚫 Sin azúcar añadida",
+          "🍫 Prácticas para consumir",
+          "🎒 Fácil de transportar",
+          "⚡ Ideales como snack",
+          "🏃‍♀️ Perfectas para acompañar un estilo de vida activo"
+        ],
+        "price": "L 75"
+      },
+
+      {
+        "images": [
+          "guEnergy.jpeg"
+        ],
+        "tag": "Geles y energía",
+        "name": "GU Energy Gel",
+        "desc": "Gel energético de rápida disponibilidad para entrenamientos, carreras y deportes de resistencia.",
+        "longDesc": "Gel energético diseñado para proporcionar carbohidratos de rápida disponibilidad durante el ejercicio. Su formato individual permite llevarlo fácilmente y consumirlo durante entrenamientos y competencias.",
+        "details": [
+          "⚡ Aporte de carbohidratos",
+          "🚴 Ideal para deportes de resistencia",
+          "🎒 Formato individual",
+          "🏃‍♀️ Fácil de consumir durante el ejercicio",
+          "⏱️ Ideal para entrenamientos y competencias",
+          "Ideal para: Running · Ciclismo · Triatlón · Trail"
+        ],
+        "price": "L 90"
+      },
+
+      {
+        "images": [
+          "prod-gel-2.jpg",
+          "prod-gel-3.jpg",
+          "prod-gel.jpg"
+        ],
+        "tag": "Geles y energía",
+        "name": "GU Roctane Energy Gel",
+        "desc": "Gel de alto rendimiento con carbohidratos y electrolitos para esfuerzos prolongados.",
+        "longDesc": "Gel energético de alto rendimiento diseñado para actividades de resistencia y esfuerzos prolongados. Combina carbohidratos y electrolitos para acompañar las demandas de entrenamientos y competencias exigentes.",
+        "details": [
+          "⚡ Energía para esfuerzos prolongados",
+          "💧 Aporta electrolitos",
+          "🏃‍♀️ Diseñado para deportes de resistencia",
+          "🎒 Formato individual y práctico",
+          "🚴 Ideal para entrenamientos y competencias",
+          "Ideal para: Running · Ciclismo · Triatlón · Trail"
+        ],
+        "price": "L 90"
+      },
+
+      {
+        "images": [
+          "guChews.jpg"
+        ],
+        "tag": "Geles y energía",
+        "name": "GU Energy Chews",
+        "desc": "Gomitas energéticas sabor Strawberry para consumir gradualmente durante el ejercicio.",
+        "longDesc": "Gomitas energéticas diseñadas para aportar carbohidratos durante la actividad física. Su formato permite consumirlas gradualmente durante entrenamientos y competencias.",
+        "details": [
+          "🍓 Sabor Strawberry",
+          "⚡ Aporte de carbohidratos",
+          "🎒 Fáciles de transportar",
+          "⏱️ Permiten consumo gradual",
+          "🏃‍♀️ Ideales para actividades de resistencia"
+        ],
+        "price": "L 100"
+      },
+
+      {
+        "images": [
+          "creatina.jpg"
+        ],
+        "tag": "Recuperación y rendimiento",
+        "name": "Nutricost Creatine Monohydrate",
+        "desc": "Creatina monohidratada en polvo para complementar entrenamientos de fuerza y rendimiento.",
+        "longDesc": "Creatina monohidratada en polvo diseñada para complementar la alimentación de personas que realizan entrenamiento físico.",
+        "details": [
+          "💪 Creatina monohidratada",
+          "🏋️ Ideal para entrenamiento de fuerza",
+          "⚡ Apoya el rendimiento durante el entrenamiento",
+          "🥤 Fácil de incorporar a bebidas",
+          "📦 Presentación de 500 g / 100 servicios"
+        ],
+        "price": "L 890"
+      },
+
+      {
+        "images": [
+          "pistolaElefor.jpg"
+        ],
+        "tag": "Recuperación y rendimiento",
+        "name": "Elefor",
+        "desc": "Pistola de masaje por percusión para complementar la recuperación muscular después del entrenamiento.",
+        "longDesc": "Dispositivo de masaje por percusión diseñado para complementar las rutinas de recuperación muscular. Permite trabajar diferentes grupos musculares después del entrenamiento.",
+        "details": [
+          "💆 Masaje por percusión",
+          "💪 Ideal para recuperación muscular",
+          "🎯 Permite trabajar zonas específicas",
+          "🏃‍♀️ Ideal después del entrenamiento",
+          "🎒 Práctica para utilizar en casa o llevar a entrenamientos"
+        ],
+        "price": "L 1,000"
+      },
+
+      {
+        "images": [
+          "fitly1.jpeg",
+          "fitly2.jpeg",
+          "fitly3.jpeg",
+          "fitly4.jpeg",
+          "fitly5.jpeg"
+        ],
+        "tag": "Accesorios",
+        "name": "Fitly",
+        "desc": "Botellas deportivas de 5 oz, ligeras y prácticas para entrenamientos y carreras.",
+        "longDesc": "Botellas prácticas y ligeras diseñadas para acompañarte durante entrenamientos, carreras y actividades deportivas. Ideales para llevar tu hidratación de forma cómoda.",
+        "details": [
+          "💧 Ideales para hidratación",
+          "🏃‍♀️ Diseñadas para actividad deportiva",
+          "🎒 Prácticas y fáciles de transportar",
+          "📏 Capacidad de 5 oz",
+          "🎨 Disponibles en diferentes colores",
+          "Colores: Negro · Azul · Verde oscuro"
+        ],
+        "price": "L 550"
+      },
+
+      {
+        "images": [
+          "Colageno.jpg"
+        ],
+        "tag": "Bienestar y nutrición",
+        "name": "VIU",
+        "desc": "Colágeno + Calcio para complementar la alimentación y el cuidado de huesos, articulaciones y tejidos.",
+        "longDesc": "Suplemento que combina colágeno y calcio en una presentación práctica, pensado para complementar la alimentación y apoyar el cuidado de huesos, articulaciones y tejidos.",
+        "details": [
+          "🦴 Con calcio",
+          "💪 Con colágeno",
+          "✨ Fácil de incorporar a la rutina diaria",
+          "🥤 Presentación práctica",
+          "🌿 Ideal como complemento de una alimentación equilibrada"
+        ],
+        "price": "L 495"
+      }
+    ]
+  },
+
+  "events": {
+    "eyebrow": "Dónde hemos estado",
+    "titleStart": "Historias reales desde la ",
+    "titleHighlight": "línea de meta",
+    "intro": "Acompañamos carreras, gran fondos y ferias en todo el país. Estos son los atletas que corrieron con nuestro combustible.",
+    "items": [
+      {
+        "image": "event-run.jpg",
+        "place": "Night Run 10K · Tegucigalpa",
+        "date": "Mayo 2026",
+        "quote": "Repartimos 1,200 geles Bolt Citrus en la meta. Los tiempos personales cayeron en toda la corrida.",
+        "person": "Andrea M., 42:32 en 10K",
+        "product": "Bolt Gel Citrus"
+      },
+      {
+        "image": "event-bike.jpg",
+        "place": "Gran Fondo Valle de Ángeles",
+        "date": "Marzo 2026",
+        "quote": "Estación de hidratación propia en el kilómetro 60. Nadie subió el último puerto con calambres.",
+        "person": "Equipo Ruta HN, 92 km",
+        "product": "Hydra Salts 500"
+      },
+      {
+        "image": "event-trail.jpg",
+        "place": "Trail Series La Tigra",
+        "date": "Enero 2026",
+        "quote": "Un gel cada 45 minutos y llegué entera al descenso final. Cero pesadez de estómago.",
+        "person": "Katherine R., 21 km trail",
+        "product": "Energy Chews Mix"
+      },
+      {
+        "image": "event-expo.jpg",
+        "place": "Expo Deportiva Honduras",
+        "date": "Noviembre 2025",
+        "quote": "Más de 800 atletas probaron la galleta de cacao en el stand. Se agotó el primer día de feria.",
+        "person": "Stand Nutri Power",
+        "product": "Power Cookie Cacao"
+      }
+    ]
+  },
+
+  "contact": {
+    "eyebrow": "Contacto",
+    "titleStart": "Hablemos de tu ",
+    "titleHighlight": "plan de nutrición",
+    "intro": "Escríbenos para pedidos mayoristas, patrocinio de eventos o asesoría personalizada para tu próxima carrera.",
+    "details": [
+      { "icon": "Mail", "label": "hola@nutripower.hn" },
+      { "icon": "Phone", "label": "+504 95734852" },
+      { "icon": "MapPin", "label": "Col. Cerro Grande, Tegucigalpa, Honduras" }
+    ]
+  },
+
+  "footer": {
+    "socials": [
+      {
+        "icon": "Instagram",
+        "href": "https://www.instagram.com/nutri_power0801?igsi=ZDNlZDc0MzIxNw==",
+        "label": "Instagram Nutri Power"
+      },
+      {
+        "icon": "Facebook",
+        "href": "#contacto",
+        "label": "Facebook Nutri Power"
+      }
+    ]
+  }
+}

@@ -1,0 +1,351 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Nutri Power design system — warm dark base + electric green brand palette.
+ * Brand: #14522A, #186433, #6AB745, #96C93E
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-lime: var(--lime);
+  --color-forest: var(--forest);
+  --color-deep: var(--deep);
+  --color-ember: var(--ember);
+  --font-display: "Saira Condensed", "Arial Narrow", sans-serif;
+  --font-sans: "Barlow", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.35rem;
+  /* warm near-black */
+  --background: oklch(0.16 0.014 62);
+  --foreground: oklch(0.96 0.008 90);
+  --card: oklch(0.21 0.016 62);
+  --card-foreground: oklch(0.96 0.008 90);
+  --popover: oklch(0.21 0.016 62);
+  --popover-foreground: oklch(0.96 0.008 90);
+  /* #6AB745 */
+  --primary: oklch(0.7 0.17 138);
+  --primary-foreground: oklch(0.16 0.05 145);
+  --secondary: oklch(0.27 0.02 62);
+  --secondary-foreground: oklch(0.96 0.008 90);
+  --muted: oklch(0.25 0.018 62);
+  --muted-foreground: oklch(0.74 0.02 80);
+  /* #96C93E */
+  --accent: oklch(0.78 0.18 128);
+  --accent-foreground: oklch(0.18 0.05 145);
+  --destructive: oklch(0.6 0.21 27);
+  --destructive-foreground: oklch(0.98 0.01 90);
+  --border: oklch(0.3 0.02 70);
+  --input: oklch(0.3 0.02 70);
+  --ring: oklch(0.7 0.17 138);
+
+  --lime: oklch(0.78 0.18 128); /* #96C93E */
+  --forest: oklch(0.42 0.1 152); /* #186433 */
+  --deep: oklch(0.37 0.09 152); /* #14522A */
+  --ember: oklch(0.72 0.16 62); /* warm amber accent */
+
+  --gradient-bolt: linear-gradient(135deg, var(--deep) 0%, var(--primary) 55%, var(--lime) 100%);
+  --gradient-warm: radial-gradient(
+    120% 90% at 15% 10%,
+    color-mix(in oklab, var(--ember) 22%, transparent) 0%,
+    transparent 60%
+  );
+  --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--primary) 35%, transparent),
+    0 18px 45px -18px color-mix(in oklab, var(--primary) 70%, transparent);
+  --shadow-warm: 0 24px 60px -30px color-mix(in oklab, var(--ember) 60%, transparent);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  .display {
+    font-family: var(--font-display);
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 0.92;
+  }
+
+  ::selection {
+    background: var(--lime);
+    color: oklch(0.16 0.05 145);
+  }
+}
+
+@utility text-gradient-bolt {
+  background: var(--gradient-bolt);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility surface-warm {
+  background-image: var(--gradient-warm);
+}
+
+@utility bolt-line {
+  height: 3px;
+  background: var(--gradient-bolt);
+  border-radius: 999px;
+}
+
+@utility btn-bolt {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.85rem 1.9rem;
+  border-radius: var(--radius);
+  background: var(--gradient-bolt);
+  color: oklch(0.15 0.04 145);
+  font-size: 1.05rem;
+  transition:
+    transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.25s ease;
+  box-shadow: var(--shadow-glow);
+
+  &:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+      0 0 0 1px color-mix(in oklab, var(--lime) 60%, transparent),
+      0 22px 50px -16px color-mix(in oklab, var(--lime) 75%, transparent);
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.99);
+  }
+}
+
+@utility btn-ghost-bolt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.85rem 1.9rem;
+  border-radius: var(--radius);
+  border: 1px solid color-mix(in oklab, var(--lime) 45%, transparent);
+  color: var(--lime);
+  font-size: 1.05rem;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: color-mix(in oklab, var(--lime) 12%, transparent);
+    border-color: var(--lime);
+    transform: translateY(-3px);
+  }
+}
+
+@utility card-lift {
+  transition:
+    transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: color-mix(in oklab, var(--primary) 55%, transparent);
+    box-shadow: var(--shadow-glow), var(--shadow-warm);
+  }
+}
+
+@utility nav-link {
+  position: relative;
+  font-family: var(--font-display);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-foreground);
+  transition: color 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: var(--gradient-bolt);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--foreground);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-rise {
+  animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@utility animate-glow {
+  animation: pulse-glow 7s ease-in-out infinite;
+}
+
+@utility animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes soft-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@utility animate-float {
+  animation: soft-float 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float {
+    animation: none;
+  }
+}
+
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(26px) scale(0.985);
+  filter: blur(6px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.9s ease;
+  will-change: opacity, transform;
+
+  &[data-shown="true"] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@utility btn-whatsapp-float {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.15rem;
+  border-radius: 999px;
+  background: var(--gradient-bolt);
+  color: oklch(0.15 0.04 145);
+  font-family: var(--font-display);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-glow);
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s ease;
+
+  &:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow:
+      0 0 0 1px color-mix(in oklab, var(--lime) 60%, transparent),
+      0 24px 55px -18px color-mix(in oklab, var(--lime) 75%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
