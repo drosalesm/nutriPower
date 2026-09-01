@@ -4,7 +4,7 @@
     "tagline": "Mejorando tu performance",
     "logo": "nutriPower1.png",
     "isotipo": "Nutri Power Isotipo.png",
-    "whatsapp": "50495734852"
+    "whatsapp": "50487805929"
   },
 
 "founders": {
@@ -49,12 +49,12 @@
     "titleParts": [
       { "text": "Energía ", "tone": "white" },
       { "text": "que ", "tone": "lime" },
-      { "text": "no se apaga ", "tone": "white" },
-      { "text": "en el ", "tone": "primary" },
-      { "text": "kilómetro ", "tone": "white" },
-      { "text": "30", "tone": "lime" }
+      { "text": "te impulsa ", "tone": "white" },
+      { "text": "a ir ", "tone": "primary" },
+      { "text": "mas ", "tone": "white" },
+      { "text": "lejos", "tone": "lime" }
     ],
-    "subtitle": "Geles, galletas de proteína y electrolitos formulados para runners y ciclistas que entrenan de verdad. Digestión ligera, sabor real, resultados medibles.",
+    "subtitle": "Geles, barras de proteína y electrolitos formulados para runners y ciclistas que entrenan de verdad. Digestión ligera, sabor real, resultados medibles.",
     "primaryCta": {
       "label": "Ver productos",
       "href": "#productos"
@@ -108,7 +108,7 @@
           "🏃‍♀️ Ideales para running, ciclismo y entrenamiento",
           "🎒 Perfectas para llevar durante competencias"
         ],
-        "price": "L 280"
+        "price": "L 200"
       },
 
       {
@@ -126,7 +126,7 @@
           "🎒 Presentación práctica para llevar",
           "🚴 Ideal para ciclismo, running y deportes de resistencia"
         ],
-        "price": "L 480"
+        "price": "L 90"
       },
 
       {
@@ -146,7 +146,7 @@
           "⏱️ Consumo rápido y cómodo",
           "🏃‍♀️ Ideales para deportes de resistencia"
         ],
-        "price": "L 350"
+        "price": "L 220"
       },
 
       {
@@ -167,7 +167,7 @@
           "🎒 Sobres individuales, prácticos para llevar",
           "🏃 Ideal para running, ciclismo, gimnasio y deportes de resistencia"
         ],
-        "price": "L 650"
+        "price": "L 90"
       },
 
       {
@@ -207,12 +207,12 @@
           "⚡ Ideales como snack",
           "🏃‍♀️ Perfectas para acompañar un estilo de vida activo"
         ],
-        "price": "L 75"
+        "price": "L 95"
       },
 
       {
         "images": [
-          "guEnergy.jpeg"
+          "guEnergyGel.png"
         ],
         "tag": "Geles y energía",
         "name": "GU Energy Gel",
@@ -247,7 +247,7 @@
           "🚴 Ideal para entrenamientos y competencias",
           "Ideal para: Running · Ciclismo · Triatlón · Trail"
         ],
-        "price": "L 90"
+        "price": "L 110"
       },
 
       {
@@ -283,7 +283,7 @@
           "🥤 Fácil de incorporar a bebidas",
           "📦 Presentación de 500 g / 100 servicios"
         ],
-        "price": "L 890"
+        "price": "L 1100"
       },
 
       {
@@ -301,7 +301,7 @@
           "🏃‍♀️ Ideal después del entrenamiento",
           "🎒 Práctica para utilizar en casa o llevar a entrenamientos"
         ],
-        "price": "L 1,000"
+        "price": "L 1,200"
       },
 
       {
@@ -342,7 +342,7 @@
           "🥤 Presentación práctica",
           "🌿 Ideal como complemento de una alimentación equilibrada"
         ],
-        "price": "L 495"
+        "price": "L 1100"
       }
     ]
   },

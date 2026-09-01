@@ -16,7 +16,7 @@ const title = "Nutri Power | Suplementos para running y ciclismo";
 const description =
   "Geles energéticos, galletas de proteína y electrolitos para runners y ciclistas. Mejorando tu performance en cada kilómetro.";
 
-const siteUrl = "https://TU-DOMINIO.com";
+const siteUrl = "https://nutri-power-theta.vercel.app";
 const shareImage = `${siteUrl}/Nutri Power Isotipo.png`;
 
 export const Route = createFileRoute("/")({
