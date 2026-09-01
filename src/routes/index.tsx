@@ -17,7 +17,7 @@ const description =
   "Geles energéticos, galletas de proteína y electrolitos para runners y ciclistas. Mejorando tu performance en cada kilómetro.";
 
 const siteUrl = "https://nutri-power-theta.vercel.app";
-const shareImage = `${siteUrl}/Nutri Power Isotipo.png`;
+const shareImage = `${siteUrl}/nutriPower1.png`;
 
 export const Route = createFileRoute("/")({
   head: () => ({
