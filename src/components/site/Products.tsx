@@ -1,7 +1,11 @@
 import { useMemo, useState } from "react";
+
 import { Images } from "lucide-react";
+
 import { Reveal } from "./Reveal";
+
 import { ProductModal } from "./ProductModal";
+
 import { asset, site } from "@/data/content";
 
 const { eyebrow, titleStart, titleHighlight, intro, items } = site.products;
@@ -12,23 +16,31 @@ const ALL_TAB = "Todos";
 
 export function Products() {
   const [selected, setSelected] = useState<Product | null>(null);
+
   const [activeTag, setActiveTag] = useState<string>(ALL_TAB);
 
   const tags = useMemo(() => {
     const seen = new Set<string>();
+
     const ordered: string[] = [];
+
     for (const p of items) {
       if (!seen.has(p.tag)) {
         seen.add(p.tag);
+
         ordered.push(p.tag);
       }
     }
+
     return [ALL_TAB, ...ordered];
   }, []);
 
   const visibleItems = useMemo(
-    () => (activeTag === ALL_TAB ? items : items.filter((p) => p.tag === activeTag)),
-    [activeTag]
+    () =>
+      activeTag === ALL_TAB
+        ? items
+        : items.filter((p) => p.tag === activeTag),
+    [activeTag],
   );
 
   return (
@@ -39,20 +51,30 @@ export function Products() {
             <span className="text-xs font-semibold uppercase tracking-[0.28em] text-accent">
               {eyebrow}
             </span>
+
             <h2 className="mt-3 text-5xl md:text-6xl">
               {titleStart}
-              <span className="text-gradient-bolt">{titleHighlight}</span>
+
+              <span className="text-gradient-bolt">
+                {titleHighlight}
+              </span>
             </h2>
           </div>
-          <p className="max-w-md text-muted-foreground">{intro}</p>
+
+          <p className="max-w-md text-muted-foreground">
+            {intro}
+          </p>
         </Reveal>
+
         <div className="bolt-line mt-8 w-32" />
 
         {/* Category tabs */}
+
         <Reveal className="mt-10">
           <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 scrollbar-none sm:mx-0 sm:flex-wrap sm:px-0">
             {tags.map((tag) => {
               const isActive = tag === activeTag;
+
               return (
                 <button
                   key={tag}
@@ -74,7 +96,12 @@ export function Products() {
 
         <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
           {visibleItems.map((p, i) => (
-            <Reveal key={p.name} as="article" delay={(i % 4) * 80} className="h-full">
+            <Reveal
+              key={p.name}
+              as="article"
+              delay={(i % 4) * 80}
+              className="h-full"
+            >
               <article
                 role="button"
                 tabIndex={0}
@@ -82,6 +109,7 @@ export function Products() {
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
                     e.preventDefault();
+
                     setSelected(p);
                   }
                 }}
@@ -97,24 +125,52 @@ export function Products() {
                     height={600}
                     loading="lazy"
                   />
+
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-95" />
+
                   <span className="absolute left-2 top-2 rounded-full bg-background/80 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-widest text-accent backdrop-blur sm:left-3 sm:top-3 sm:px-2.5 sm:py-1 sm:text-[10px]">
                     {p.tag}
                   </span>
+
+                  {p.promo && (
+                    <span className="absolute right-2 top-2 rounded-full bg-primary px-2 py-0.5 text-[9px] font-bold uppercase tracking-widest text-primary-foreground shadow-lg sm:right-3 sm:top-3 sm:px-2.5 sm:py-1 sm:text-[10px]">
+                      Promo
+                    </span>
+                  )}
+
                   <span className="absolute bottom-2 right-2 hidden items-center gap-1.5 rounded-full bg-background/80 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-foreground opacity-0 backdrop-blur transition-all duration-300 group-hover:opacity-100 sm:right-3 sm:bottom-3 sm:inline-flex">
                     <Images className="size-3" />
+
                     {p.images.length} fotos
                   </span>
                 </div>
+
                 <div className="flex flex-1 flex-col p-2.5 sm:p-4">
                   <h3 className="text-sm leading-tight transition-colors duration-300 group-hover:text-accent sm:text-lg">
                     {p.name}
                   </h3>
+
                   <p className="mt-1 line-clamp-2 flex-1 text-[11px] leading-relaxed text-muted-foreground sm:mt-1.5 sm:min-h-10 sm:text-xs">
                     {p.desc}
                   </p>
-                  <div className="mt-2.5 flex items-center justify-between gap-2 sm:mt-4 sm:gap-3">
-                    <span className="display text-base text-accent sm:text-xl">{p.price}</span>
+
+                  <div className="mt-2.5 flex items-end justify-between gap-2 sm:mt-4 sm:gap-3">
+                    {p.promo ? (
+                      <div className="flex flex-col">
+                        <span className="text-[10px] text-muted-foreground line-through sm:text-xs">
+                          {p.price}
+                        </span>
+
+                        <span className="display text-base text-accent sm:text-xl">
+                          {p.promoPrice}
+                        </span>
+                      </div>
+                    ) : (
+                      <span className="display text-base text-accent sm:text-xl">
+                        {p.price}
+                      </span>
+                    )}
+
                     <span className="text-[9px] font-semibold uppercase tracking-wider text-muted-foreground transition-colors duration-300 group-hover:text-accent sm:text-[10px]">
                       Ver detalles
                     </span>
@@ -126,7 +182,10 @@ export function Products() {
         </div>
       </div>
 
-      <ProductModal product={selected} onClose={() => setSelected(null)} />
+      <ProductModal
+        product={selected}
+        onClose={() => setSelected(null)}
+      />
     </section>
   );
 }

@@ -7,28 +7,28 @@
     "whatsapp": "50487805929"
   },
 
-"founders": {
-  "eyebrow": "Acerca de nosotros",
-  "titleStart": "Conoce a quienes están detrás de ",
-  "titleHighlight": "Nutri Power",
-  "intro": "Nutri Power nace de la pasión por el deporte, la nutrición y el rendimiento. Nuestro propósito es acompañar a cada atleta con productos seleccionados para entrenar, competir y recuperarse mejor.",
-  "items": [
-    {
-      "image": "amigoKaren.jpeg",
-      "imageAlt": "Fundador de Nutri Power",
-      "name": "Jorge Maldonado",
-      "role": "Co-Fundador",
-      "description": "Jorge Maldonado es un apasionado del deporte y de los retos que implica mantenerse siempre activo. Su principal pasión está en el running y el entrenamiento en gimnasio, disciplinas que forman parte de su rutina y que reflejan su compromiso con el rendimiento, la disciplina y el bienestar. También disfruta del ciclismo, incorporándolo ocasionalmente como otra forma de mantenerse activo, disfrutar del deporte y asumir nuevos retos. Más allá de practicar diferentes disciplinas, Jorge representa ese espíritu de quien entiende que los resultados no aparecen de un día para otro: se construyen con cada entrenamiento, cada esfuerzo y cada decisión de seguir adelante, incluso cuando no es fácil. Su experiencia como deportista y su interés por mantenerse activo aportan a Nutripower una perspectiva práctica y cercana. Conoce lo que significa prepararse para un entrenamiento, buscar energía para completar un reto y cuidar el cuerpo para poder volver a dar lo mejor al día siguiente. Su disciplina, constancia y dedicación son parte esencial de la visión que impulsa Nutripower: acompañar a cada persona en su propio camino, sin importar su nivel o disciplina, para seguir avanzando y mejorar su performance."
-    },
-    {
-      "image": "karen.jpeg",
-      "imageAlt": "Fundador de Nutri Power",
-      "name": "Karen Cruz",
-      "role": "Co-Fundador",
-      "description": "Karen Cruz es una apasionada del deporte y de los retos que implica llevar un estilo de vida activo. El gimnasio, el running y el ciclismo forman parte de su vida, disciplinas que disfruta y que le han permitido conocer de cerca la constancia, la disciplina y el compromiso que requiere mejorar día a día. Su experiencia en diferentes disciplinas deportivas le ha permitido entender que cada actividad tiene necesidades diferentes: desde una buena hidratación y energía para afrontar un entrenamiento o una ruta en bicicleta, hasta una adecuada recuperación después del esfuerzo. De esta pasión por el deporte y de la búsqueda constante por sentirse, entrenar y rendir mejor nace también su visión para Nutripower: crear una marca cercana a los deportistas, que conozca sus necesidades y les facilite encontrar productos que puedan acompañarlos antes, durante y después de cada reto. Para Karen, el deporte es mucho más que ejercicio. Es una forma de vida que representa disciplina, bienestar, perseverancia y la satisfacción de superar los propios límites."
-    }
-  ]
-},
+  "founders": {
+    "eyebrow": "Acerca de nosotros",
+    "titleStart": "Conoce a quienes están detrás de ",
+    "titleHighlight": "Nutri Power",
+    "intro": "Nutri Power nace de la pasión por el deporte, la nutrición y el rendimiento. Nuestro propósito es acompañar a cada atleta con productos seleccionados para entrenar, competir y recuperarse mejor.",
+    "items": [
+      {
+        "image": "amigoKaren.jpeg",
+        "imageAlt": "Fundador de Nutri Power",
+        "name": "Jorge Maldonado",
+        "role": "Co-Fundador",
+        "description": "Jorge Maldonado es un apasionado del deporte y de los retos que implica mantenerse siempre activo. Su principal pasión está en el running y el entrenamiento en gimnasio, disciplinas que forman parte de su rutina y que reflejan su compromiso con el rendimiento, la disciplina y el bienestar. También disfruta del ciclismo, incorporándolo ocasionalmente como otra forma de mantenerse activo, disfrutar del deporte y asumir nuevos retos. Más allá de practicar diferentes disciplinas, Jorge representa ese espíritu de quien entiende que los resultados no aparecen de un día para otro: se construyen con cada entrenamiento, cada esfuerzo y cada decisión de seguir adelante, incluso cuando no es fácil. Su experiencia como deportista y su interés por mantenerse activo aportan a Nutripower una perspectiva práctica y cercana. Conoce lo que significa prepararse para un entrenamiento, buscar energía para completar un reto y cuidar el cuerpo para poder volver a dar lo mejor al día siguiente. Su disciplina, constancia y dedicación son parte esencial de la visión que impulsa Nutripower: acompañar a cada persona en su propio camino, sin importar su nivel o disciplina, para seguir avanzando y mejorar su performance."
+      },
+      {
+        "image": "karen.jpeg",
+        "imageAlt": "Fundador de Nutri Power",
+        "name": "Karen Cruz",
+        "role": "Co-Fundador",
+        "description": "Karen Cruz es una apasionada del deporte y de los retos que implica llevar un estilo de vida activo. El gimnasio, el running y el ciclismo forman parte de su vida, disciplinas que disfruta y que le han permitido conocer de cerca la constancia, la disciplina y el compromiso que requiere mejorar día a día. Su experiencia en diferentes disciplinas deportivas le ha permitido entender que cada actividad tiene necesidades diferentes: desde una buena hidratación y energía para afrontar un entrenamiento o una ruta en bicicleta, hasta una adecuada recuperación después del esfuerzo. De esta pasión por el deporte y de la búsqueda constante por sentirse, entrenar y rendir mejor nace también su visión para Nutripower: crear una marca cercana a los deportistas, que conozca sus necesidades y les facilite encontrar productos que puedan acompañarlos antes, durante y después de cada reto. Para Karen, el deporte es mucho más que ejercicio. Es una forma de vida que representa disciplina, bienestar, perseverancia y la satisfacción de superar los propios límites."
+      }
+    ]
+  },
 
   "nav": {
     "links": [
@@ -108,7 +108,9 @@
           "🏃‍♀️ Ideales para running, ciclismo y entrenamiento",
           "🎒 Perfectas para llevar durante competencias"
         ],
-        "price": "L 200"
+        "price": "L 200",
+        "promo": true,
+        "promoPrice": "L 160"
       },
 
       {
@@ -126,14 +128,16 @@
           "🎒 Presentación práctica para llevar",
           "🚴 Ideal para ciclismo, running y deportes de resistencia"
         ],
-        "price": "L 90"
+        "price": "L 90",
+        "promo": true,
+        "promoPrice": "L 72"
       },
 
       {
         "images": [
-          "Saltstickk1.jpg",
-          "Saltstickk2.jpg",
-          "Saltstickk3.jpg"
+          "salstic.png",
+          "salstic2.png",
+          "salstic3.png"
         ],
         "tag": "Electrolitos",
         "name": "SaltStick FastChews",
@@ -146,14 +150,14 @@
           "⏱️ Consumo rápido y cómodo",
           "🏃‍♀️ Ideales para deportes de resistencia"
         ],
-        "price": "L 220"
+        "price": "L 220",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
         "images": [
-          "prod-electro-3.jpg",
-          "prod-electro.jpg",
-          "prod-electro-2.jpg"
+          "LMNT1.png"
         ],
         "tag": "Electrolitos",
         "name": "LMNT",
@@ -167,7 +171,9 @@
           "🎒 Sobres individuales, prácticos para llevar",
           "🏃 Ideal para running, ciclismo, gimnasio y deportes de resistencia"
         ],
-        "price": "L 90"
+        "price": "L 90",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
@@ -189,7 +195,9 @@
           "🏃‍♀️ Excelente opción para actividades prolongadas",
           "Sabores: Chocolate Brownie · Cool Mint Chocolate · Peanut Butter · Chocolate Chip"
         ],
-        "price": "L 90"
+        "price": "L 90",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
@@ -207,12 +215,16 @@
           "⚡ Ideales como snack",
           "🏃‍♀️ Perfectas para acompañar un estilo de vida activo"
         ],
-        "price": "L 95"
+        "price": "L 95",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
         "images": [
-          "guEnergyGel.png"
+          "gu1.png",
+          "gu2.png",
+          "gu3.png"
         ],
         "tag": "Geles y energía",
         "name": "GU Energy Gel",
@@ -226,14 +238,18 @@
           "⏱️ Ideal para entrenamientos y competencias",
           "Ideal para: Running · Ciclismo · Triatlón · Trail"
         ],
-        "price": "L 90"
+        "price": "L 90",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
         "images": [
-          "prod-gel-2.jpg",
-          "prod-gel-3.jpg",
-          "prod-gel.jpg"
+          "ROCTAIN1.png",
+          "ROCTAIN2.png",
+          "ROCTAIN3.png",
+          "ROCTAIN4.png",
+          "ROCTAIN5.png"
         ],
         "tag": "Geles y energía",
         "name": "GU Roctane Energy Gel",
@@ -247,7 +263,9 @@
           "🚴 Ideal para entrenamientos y competencias",
           "Ideal para: Running · Ciclismo · Triatlón · Trail"
         ],
-        "price": "L 110"
+        "price": "L 110",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
@@ -265,7 +283,9 @@
           "⏱️ Permiten consumo gradual",
           "🏃‍♀️ Ideales para actividades de resistencia"
         ],
-        "price": "L 100"
+        "price": "L 100",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
@@ -283,7 +303,9 @@
           "🥤 Fácil de incorporar a bebidas",
           "📦 Presentación de 500 g / 100 servicios"
         ],
-        "price": "L 1100"
+        "price": "L 1100",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
@@ -301,7 +323,9 @@
           "🏃‍♀️ Ideal después del entrenamiento",
           "🎒 Práctica para utilizar en casa o llevar a entrenamientos"
         ],
-        "price": "L 1,200"
+        "price": "L 1,200",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
@@ -324,12 +348,14 @@
           "🎨 Disponibles en diferentes colores",
           "Colores: Negro · Azul · Verde oscuro"
         ],
-        "price": "L 550"
+        "price": "L 550",
+        "promo": false,
+        "promoPrice": ""
       },
 
       {
         "images": [
-          "Colageno.jpg"
+          "colageno.png"
         ],
         "tag": "Bienestar y nutrición",
         "name": "VIU",
@@ -342,7 +368,9 @@
           "🥤 Presentación práctica",
           "🌿 Ideal como complemento de una alimentación equilibrada"
         ],
-        "price": "L 1100"
+        "price": "L 1100",
+        "promo": false,
+        "promoPrice": ""
       }
     ]
   },
@@ -394,9 +422,18 @@
     "titleHighlight": "plan de nutrición",
     "intro": "Escríbenos para pedidos mayoristas, patrocinio de eventos o asesoría personalizada para tu próxima carrera.",
     "details": [
-      { "icon": "Mail", "label": "hola@nutripower.hn" },
-      { "icon": "Phone", "label": "+504 95734852" },
-      { "icon": "MapPin", "label": "Col. Cerro Grande, Tegucigalpa, Honduras" }
+      {
+        "icon": "Mail",
+        "label": "hola@nutripower.hn"
+      },
+      {
+        "icon": "Phone",
+        "label": "+504 87805929"
+      },
+      {
+        "icon": "MapPin",
+        "label": "Col. Cerro Grande, Tegucigalpa, Honduras"
+      }
     ]
   },
 
