@@ -1,4 +1,12 @@
-import { MapPin, Quote } from "lucide-react";
+import { useState } from "react";
+
+import {
+  ChevronLeft,
+  ChevronRight,
+  Images,
+  MapPin,
+  Quote,
+} from "lucide-react";
 
 import { Reveal } from "./Reveal";
 
@@ -6,13 +14,166 @@ import { asset, site } from "@/data/content";
 
 const { eyebrow, titleStart, titleHighlight, intro, items } = site.events;
 
+type EventItem = Omit<(typeof items)[number], "image"> & {
+  image?: string;
+  images?: string[];
+};
+
+type EventGalleryProps = {
+  event: EventItem;
+};
+
+function EventGallery({ event }: EventGalleryProps) {
+  const [activeImage, setActiveImage] = useState(0);
+
+  const images =
+    event.images && event.images.length > 0
+      ? event.images
+      : event.image
+        ? [event.image]
+        : [];
+
+  const hasMultipleImages = images.length > 1;
+
+  const previousImage = () => {
+    setActiveImage((current) =>
+      current === 0 ? images.length - 1 : current - 1,
+    );
+  };
+
+  const nextImage = () => {
+    setActiveImage((current) =>
+      current === images.length - 1 ? 0 : current + 1,
+    );
+  };
+
+  if (images.length === 0) {
+    return null;
+  }
+
+  return (
+    <>
+      <img
+        key={images[activeImage]}
+        src={asset(images[activeImage])}
+        alt={`${event.place} - imagen ${activeImage + 1}`}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]"
+        width={1200}
+        height={912}
+        loading="lazy"
+      />
+
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+
+      {/* Fecha */}
+      <span className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-md">
+        {event.date}
+      </span>
+
+      {/* Contador de imágenes */}
+      {hasMultipleImages && (
+        <span className="absolute right-5 top-5 flex items-center gap-1.5 rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-[10px] font-semibold text-white backdrop-blur-md">
+          <Images className="size-3.5" />
+
+          {activeImage + 1} / {images.length}
+        </span>
+      )}
+
+      {/* Navegación */}
+      {hasMultipleImages && (
+        <>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              previousImage();
+            }}
+            aria-label="Ver imagen anterior"
+            className="absolute left-4 top-1/2 flex size-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/30 text-white opacity-0 backdrop-blur-md transition-all duration-300 hover:bg-black/60 group-hover:opacity-100 md:left-5"
+          >
+            <ChevronLeft className="size-5" />
+          </button>
+
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              nextImage();
+            }}
+            aria-label="Ver siguiente imagen"
+            className="absolute right-4 top-1/2 flex size-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/30 text-white opacity-0 backdrop-blur-md transition-all duration-300 hover:bg-black/60 group-hover:opacity-100 md:right-5"
+          >
+            <ChevronRight className="size-5" />
+          </button>
+
+          {/* Indicadores */}
+          <div className="absolute bottom-5 left-1/2 hidden -translate-x-1/2 items-center gap-1.5 md:flex">
+            {images.map((image, imageIndex) => (
+              <button
+                key={image}
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveImage(imageIndex);
+                }}
+                aria-label={`Ver imagen ${imageIndex + 1}`}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  activeImage === imageIndex
+                    ? "w-6 bg-white"
+                    : "w-1.5 bg-white/40 hover:bg-white/70"
+                }`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* Lugar sobre imagen en móvil */}
+      <div className="absolute bottom-5 left-5 right-5 md:hidden">
+        <div className="flex items-start gap-2 text-white">
+          <MapPin className="mt-1 size-4 shrink-0 text-primary" />
+
+          <h3 className="text-xl font-semibold leading-tight">
+            {event.place}
+          </h3>
+        </div>
+
+        {/* Indicadores móvil */}
+        {hasMultipleImages && (
+          <div className="mt-4 flex items-center gap-1.5">
+            {images.map((image, imageIndex) => (
+              <button
+                key={image}
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveImage(imageIndex);
+                }}
+                aria-label={`Ver imagen ${imageIndex + 1}`}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  activeImage === imageIndex
+                    ? "w-6 bg-white"
+                    : "w-1.5 bg-white/40"
+                }`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    </>
+  );
+}
+
 export function Events() {
+  const eventItems = items as readonly EventItem[];
+
   return (
     <section
       id="eventos"
       className="relative overflow-hidden py-20 md:py-28"
     >
       <div className="surface-warm absolute inset-0 -z-10" />
+
       <div className="absolute inset-0 -z-20 bg-card/40" />
 
       <div className="mx-auto max-w-7xl px-5">
@@ -45,7 +206,7 @@ export function Events() {
 
         {/* Eventos */}
         <div className="mt-14 space-y-10 md:mt-20 md:space-y-16">
-          {items.map((event, index) => {
+          {eventItems.map((event, index) => {
             const isEven = index % 2 === 0;
 
             return (
@@ -58,38 +219,13 @@ export function Events() {
                     isEven ? "md:mr-20" : "md:ml-20"
                   }`}
                 >
-                  {/* Imagen */}
+                  {/* Galería de imágenes */}
                   <div
                     className={`relative min-h-[270px] overflow-hidden md:col-span-7 md:min-h-[390px] ${
                       isEven ? "" : "md:order-2"
                     }`}
                   >
-                    <img
-                      src={asset(event.image)}
-                      alt={event.place}
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]"
-                      width={1200}
-                      height={912}
-                      loading="lazy"
-                    />
-
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-
-                    {/* Fecha */}
-                    <span className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-md">
-                      {event.date}
-                    </span>
-
-                    {/* Lugar sobre imagen */}
-                    <div className="absolute bottom-5 left-5 right-5 md:hidden">
-                      <div className="flex items-start gap-2 text-white">
-                        <MapPin className="mt-1 size-4 shrink-0 text-primary" />
-
-                        <h3 className="text-xl font-semibold leading-tight">
-                          {event.place}
-                        </h3>
-                      </div>
-                    </div>
+                    <EventGallery event={event} />
                   </div>
 
                   {/* Información */}

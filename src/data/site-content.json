@@ -401,7 +401,11 @@
     "intro": "No solo vendemos nutrición. Somos parte del movimiento. Nutripower está presente donde el deporte cobra vida: carreras, ciclismo, gimnasios, entrenamientos, podcasts y experiencias que conectan a atletas y comunidades. ",
     "items": [
       {
-        "image": "evento1.jpeg",
+        "images": [
+          "evento1.jpeg",
+          "evento1_4.jpeg",
+          "evento1_3.jpeg"
+          ],
         "place": "Alianza al fallo podcast & Equinox",
         "date": "Mayo 2026",
         "quote": "Nutripower se sumó como patrocinador a esta gran experiencia junto a Al Fallo Podcast y Equinox,reuniendo en un mismo lugar a atletas, influencers, creadores y una comunidad apasionada por el deporte",
@@ -409,7 +413,11 @@
         "product": "Productos de alto rendimiento"
       },
       {
-        "image": "sportia3.jpeg",
+        "images": [
+          "sportia3.jpeg",
+          "evento2_2.jpeg",
+          "evento2_3.jpeg"
+          ],        
         "place": "Flow & Run Market by Sportia Runners.",
         "date": "Agosto 2026",
         "quote": "Un evento que arrancó con kilómetros y mucha energía, continuó con una sesión de yoga para bajar revoluciones y cerró con un market lleno de marcas, comunidad y buena vibra. Nuestro stand fue punto de encuentro para corredores y amantes de un estilo de vida activo, donde compartimos nuestros productos, conversamos, recargamos energía y, sobre todo, disfrutamos juntos de la experiencia.",
@@ -417,7 +425,11 @@
         "product": "Productos de alto rendimiento"
       },
       {
-        "image": "granComision1.jpeg",
+        "images": [
+          "granComision1.jpeg",
+          "granComision2.jpeg",
+          "granComision3.jpeg"
+          ],
         "place": "Maratón GranCo",
         "date": "Mayo 2026",
         "quote": "¡Kilómetros, energía y comunidad! 🏃‍♀️🏃‍♂️ Nutripower fue parte de la Maratón GranCo, organizada por la iglesia Gran Comisión, como patrocinador de esta gran jornada deportiva. Estuvimos presentes para acompañar a la comunidad running, compartiendo nuestros productos y llevando energía e hidratación para cada kilómetro, desde los 5K hasta los 10K.",
