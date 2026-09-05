@@ -54,7 +54,7 @@
       { "text": "mas ", "tone": "white" },
       { "text": "lejos", "tone": "lime" }
     ],
-    "subtitle": "Geles, barras de proteína y electrolitos formulados para runners y ciclistas que entrenan de verdad. Digestión ligera, sabor real, resultados medibles.",
+    "subtitle": "Nutripower es nutrición deportiva para quienes entrenan, compiten y se desafían todos los días. Una selección de productos para energía, hidratación, rendimiento y recuperación, pensada para acompañarte en cada etapa de tu entrenamiento y adaptarse a la forma en que tú te mueves.",
     "primaryCta": {
       "label": "Ver productos",
       "href": "#productos"
@@ -83,7 +83,7 @@
     "eyebrow": "Catálogo",
     "titleStart": "Combustible ",
     "titleHighlight": "real",
-    "intro": "Productos seleccionados para hidratación, energía, rendimiento y recuperación. Opciones prácticas para running, ciclismo, gimnasio y deportes de resistencia.",
+    "intro": "Nutrición para cada etapa de tu rendimiento desde hidratación, energía hasta la recuperación. Encuentra productos formulados para acompañarte en cada entrenamiento y competencia. Pensados para adaptarse a tu disciplina, tu ritmo y tus objetivos.",
 
     "modal": {
       "detailsTitle": "Detalles",
@@ -371,7 +371,26 @@
         "price": "L 1100",
         "promo": false,
         "promoPrice": ""
-      }
+      },
+      {
+        "images": [
+          "proteina.png"
+        ],
+        "tag": "Bienestar y nutrición",
+        "name": "Proteina Biotech",
+        "desc": "Proteína en polvo para complementar la alimentación y apoyar la recuperación muscular después del entrenamiento.",
+        "longDesc": "",
+        "details": [
+          "Proteina de suero (whey)",
+          "Proteina: 20G-22G por porción",
+          "Gluten Free",
+          "BCA: Aminoácidos de cadena ramificada",
+          "Glutamina: añadida segun el sabor"
+        ],
+        "price": "L 2500",
+        "promo": false,
+        "promoPrice": ""
+      }      
     ]
   },
 
@@ -379,39 +398,31 @@
     "eyebrow": "Dónde hemos estado",
     "titleStart": "Historias reales desde la ",
     "titleHighlight": "línea de meta",
-    "intro": "Acompañamos carreras, gran fondos y ferias en todo el país. Estos son los atletas que corrieron con nuestro combustible.",
+    "intro": "No solo vendemos nutrición. Somos parte del movimiento. Nutripower está presente donde el deporte cobra vida: carreras, ciclismo, gimnasios, entrenamientos, podcasts y experiencias que conectan a atletas y comunidades.",
     "items": [
       {
-        "image": "event-run.jpg",
-        "place": "Night Run 10K · Tegucigalpa",
+        "image": "evento1.jpeg",
+        "place": "Alianza al fallo podcast & Equinox",
         "date": "Mayo 2026",
-        "quote": "Repartimos 1,200 geles Bolt Citrus en la meta. Los tiempos personales cayeron en toda la corrida.",
-        "person": "Andrea M., 42:32 en 10K",
-        "product": "Bolt Gel Citrus"
+        "quote": "Nutripower se sumó como patrocinador a esta gran experiencia junto a Al Fallo Podcast y Equinox,reuniendo en un mismo lugar a atletas, influencers, creadores y una comunidad apasionada por el deporte",
+        "person": "By: Equinox",
+        "product": "Productos de alto rendimiento"
       },
       {
-        "image": "event-bike.jpg",
-        "place": "Gran Fondo Valle de Ángeles",
-        "date": "Marzo 2026",
-        "quote": "Estación de hidratación propia en el kilómetro 60. Nadie subió el último puerto con calambres.",
-        "person": "Equipo Ruta HN, 92 km",
-        "product": "Hydra Salts 500"
+        "image": "sportia3.jpeg",
+        "place": "Flow & Run Market by Sportia Runners.",
+        "date": "Agosto 2026",
+        "quote": "Un evento que arrancó con kilómetros y mucha energía, continuó con una sesión de yoga para bajar revoluciones y cerró con un market lleno de marcas, comunidad y buena vibra. Nuestro stand fue punto de encuentro para corredores y amantes de un estilo de vida activo, donde compartimos nuestros productos, conversamos, recargamos energía y, sobre todo, disfrutamos juntos de la experiencia.",
+        "person": "By: Sportia Runners",
+        "product": "Productos de alto rendimiento"
       },
       {
-        "image": "event-trail.jpg",
-        "place": "Trail Series La Tigra",
-        "date": "Enero 2026",
-        "quote": "Un gel cada 45 minutos y llegué entera al descenso final. Cero pesadez de estómago.",
-        "person": "Katherine R., 21 km trail",
-        "product": "Energy Chews Mix"
-      },
-      {
-        "image": "event-expo.jpg",
-        "place": "Expo Deportiva Honduras",
-        "date": "Noviembre 2025",
-        "quote": "Más de 800 atletas probaron la galleta de cacao en el stand. Se agotó el primer día de feria.",
-        "person": "Stand Nutri Power",
-        "product": "Power Cookie Cacao"
+        "image": "granComision1.jpeg",
+        "place": "Maratón GranCo",
+        "date": "Mayo 2026",
+        "quote": "¡Kilómetros, energía y comunidad! 🏃‍♀️🏃‍♂️ Nutripower fue parte de la Maratón GranCo, organizada por la iglesia Gran Comisión, como patrocinador de esta gran jornada deportiva. Estuvimos presentes para acompañar a la comunidad running, compartiendo nuestros productos y llevando energía e hidratación para cada kilómetro, desde los 5K hasta los 10K.",
+        "person": "By: La Gran Comision",
+        "product": "Productos de alto rendimiento"
       }
     ]
   },
