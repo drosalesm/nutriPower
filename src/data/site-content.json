@@ -64,9 +64,7 @@
       "href": "#eventos"
     },
     "stats": [
-      { "value": "+8,000", "label": "Atletas abastecidos" },
-      { "value": "25 g", "label": "Carbos por gel" },
-      { "value": "0", "label": "Malestar estomacal" }
+
     ],
     "marquee": [
       "Running",
@@ -129,7 +127,7 @@
           "🚴 Ideal para ciclismo, running y deportes de resistencia"
         ],
         "price": "L 90",
-        "promo": true,
+        "promo": false,
         "promoPrice": "L 80"
       },
 
@@ -150,7 +148,7 @@
           "⏱️ Consumo rápido y cómodo",
           "🏃‍♀️ Ideales para deportes de resistencia"
         ],
-        "price": "L 220",
+        "price": "L 150",
         "promo": false,
         "promoPrice": ""
       },
@@ -196,7 +194,7 @@
           "Sabores: Chocolate Brownie · Cool Mint Chocolate · Peanut Butter · Chocolate Chip"
         ],
         "price": "L 95",
-        "promo": true,
+        "promo": false,
         "promoPrice": "L 80"
       },
 
@@ -287,7 +285,28 @@
         "promo": true,
         "promoPrice": "L 85"
       },
-
+      {
+        "images": [
+          "salstick130_1.jpg",
+          "salstick130_2.png",
+          "salstick130_3.jpeg",
+          "salstick130_4.png"
+        ],
+        "tag": "Geles y energía",
+        "name": "Gomitas SaltStick",
+        "desc": "Gomitas energéticas para consumir gradualmente durante el ejercicio.",
+        "longDesc": "Gomitas energéticas diseñadas para aportar carbohidratos durante la actividad física. Su formato permite consumirlas gradualmente durante entrenamientos y competencias.",
+        "details": [
+          "🍓 Sabor Strawberry",
+          "⚡ Aporte de carbohidratos",
+          "🎒 Fáciles de transportar",
+          "⏱️ Permiten consumo gradual",
+          "🏃‍♀️ Ideales para actividades de resistencia"
+        ],
+        "price": "L 130",
+        "promo": false,
+        "promoPrice": "L 85"
+      },
       {
         "images": [
           "creatina.jpg"
@@ -324,10 +343,28 @@
           "🎒 Práctica para utilizar en casa o llevar a entrenamientos"
         ],
         "price": "L 1,200",
-        "promo": true,
+        "promo": false,
         "promoPrice": "L 1,000"
       },
-
+      {
+        "images": [
+          "creatinaBIOTEC.webp"
+        ],
+        "tag": "Recuperación y rendimiento",
+        "name": "Creatina 147 Biotech",
+        "desc": "Creatina monohidratada en polvo para complementar entrenamientos de fuerza y rendimiento.",
+        "longDesc": "Creatina monohidratada en polvo diseñada para complementar la alimentación de personas que realizan entrenamiento físico.",
+        "details": [
+          "💪 Creatina monohidratada",
+          "🏋️ Ideal para entrenamiento de fuerza",
+          "⚡ Apoya el rendimiento durante el entrenamiento",
+          "🥤 Fácil de incorporar a bebidas",
+          "📦 Presentación de 500 g / 100 servicios"
+        ],
+        "price": "L 1500",
+        "promo": false,
+        "promoPrice": "L 1,000"
+      },
       {
         "images": [
           "fitly1.jpeg",
