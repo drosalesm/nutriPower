@@ -1,0 +1,19 @@
+      {
+        "images": [
+          "guChews.jpg"
+        ],
+        "tag": "Geles y energía",
+        "name": "GU Energy Chews",
+        "desc": "Gomitas energéticas sabor Strawberry para consumir gradualmente durante el ejercicio.",
+        "longDesc": "Gomitas energéticas diseñadas para aportar carbohidratos durante la actividad física. Su formato permite consumirlas gradualmente durante entrenamientos y competencias.",
+        "details": [
+          "🍓 Sabor Strawberry",
+          "⚡ Aporte de carbohidratos",
+          "🎒 Fáciles de transportar",
+          "⏱️ Permiten consumo gradual",
+          "🏃‍♀️ Ideales para actividades de resistencia"
+        ],
+        "price": "L 100",
+        "promo": false
+        "promoPrice": "L 85"
+      },
